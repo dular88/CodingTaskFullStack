@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Http;
 class GitController extends Controller
 {
     public function getRepo(){
-        $token = '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';
+        $token = 'PUT_YOUR_GIT_TOKEN_HERE ';
         $url = 'https://api.github.com/search/repositories?q=stars:%3E1&sort=stars&order=desc&per_page=100';
 
         $response = Http::withHeaders([
